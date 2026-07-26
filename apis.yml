@@ -1,7 +1,16 @@
 aid: earn
 name: Earn
-description: Earn is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Earn.com (formerly 21 Inc / 21.co) was a cryptocurrency startup that let people
+  earn Bitcoin by replying to paid messages and completing microtasks, effectively
+  a paid-email and paid-task marketplace settled in crypto. Founded by Balaji
+  Srinivasan and backed by DCVC among others, the company was acquired by Coinbase
+  in April 2018 (Coinbase, ticker COIN) and folded into the Coinbase Earn product.
+  The independent earn.com property no longer operates a standalone product or
+  developer surface: earn.com now issues a 301 redirect to coinbase.com/earn, and
+  earlier hosts such as 21.co and api.earn.com no longer resolve. This profile is
+  retained in the API Evangelist network as an acquired-company record; there is no
+  independent, first-party API, developer portal, or OpenAPI to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/earn/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +18,47 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: coinbase
+x-acquired-year: '2018'
+x-former-names:
+- 21 Inc
+- 21.co
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Cryptocurrency
+- Bitcoin
+- Payments
+- Acquired
+- Coinbase
+image: https://raw.githubusercontent.com/api-evangelist/earn/refs/heads/main/apis.yml
 apis: []
+common:
+- type: DomainSecurity
+  url: security/earn-domain-security.yml
+- type: Website
+  url: https://earn.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
